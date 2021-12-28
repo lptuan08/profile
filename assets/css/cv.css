@@ -58,10 +58,7 @@
         
     
 }
-    .box-item:hover{
-        transform: translate(0.3rem,-0.5rem);
-        box-shadow: 0.8rem 0.8rem 0.5rem #aaaaaa;
-    }
+
 .box-item{
     padding: 1rem 2rem;
     transition: ease 0.15s;
@@ -269,4 +266,31 @@
     background-color: var(--box-content);
     color: var(--text-color-white);
     height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 740px){
+
+}
+/* pc medium */
+@media (min-width: 1113px){
+    .box-item:hover{
+        transform: translate(0.3rem,-0.5rem);
+        box-shadow: 0.8rem 0.8rem 0.5rem #aaaaaa;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .box-item:hover{
+        transform: translate(0.3rem,-0.5rem);
+        box-shadow: 0.8rem 0.8rem 0.5rem #aaaaaa;
+    }
 }
