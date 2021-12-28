@@ -1,0 +1,62 @@
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+     }
+    
+  
+html {
+     /* font-size: 100%;  */
+     /*  mat dinh trinh duyet font-size 16px (1rem khi nay bang 16px */
+     /* vi vay hay dat font-size: 62.5%  thi khi do 1.6rem =16px*/
+     font-size: 62.5%;
+     line-height: 1.6rem; /*16px*/
+     font-family: 'Roboto', sans-serif;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ccc;
+} 
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(71, 70, 70);
+}
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+
+
+/* color CV */
+:root {
+    
+    --text-black: #000;
+    --main-color: #333;
+    --hover-color: #ccc;
+    --border-color: #dbdbdb;
+    --text-color-white:#F1F1F1;
+    --box-content: #515a2cf2;
+    --box-content-left:#dbdbdbd6;
+    --text-black:#333333
+}
+
+
+li{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3 {
+    font-weight: 600;
+}
+h3{
+    font-size: 1.6rem;
+}
+p{
+    font-size:1.5rem;
+    line-height: 1.6;
+}
