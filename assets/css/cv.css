@@ -1,15 +1,28 @@
 #app{
     background-image: url("../img/backgroud-home-cv.jpg");
     min-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 #header {
-    background-color: rgba(0, 0, 0, 0.5);
+    
     height: 4rem;
+    position: fixed;
+    margin: auto;
+    transition: top 0.2s;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 100%;
+    
+    
 }
+#mySidepanel {
+        display: none;
+}
+
 
 .menu-header {
     
@@ -49,7 +62,7 @@
 
 /*------------------- content -------------------------*/ 
 .container-content{
-   margin-top: 1rem;
+   padding-top: 4rem;
 }
 .box-container{
         background-clip: content-box;
@@ -270,16 +283,100 @@
 
 
 
+/* list menu mobile */
+#panel {
+    background-color: rgba(17, 17, 17, 0.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    position: fixed;
+    animation: opa 0.2s ease-in ;
+    display: none;
+
+}
+.box-menu-list{
+    height: 100%;
+    width: 85%;
+    position:absolute;
+    
+    background-color: rgba(17, 17, 17, 0.96);
+}
+.background-panel{
+
+}
+.box-menu-list li{
+    list-style: none; 
+}
+.box-menu-list a {
+    color: var(--text-color-white);
+    font-size: 2.5rem;
+    line-height: 2.5;
+    
+}
+.closex i {
+    color: var(--text-color-white);
+    position: absolute;
+    right: 0;
+    top: 4%;
+    right: 22%;
+    font-size: 2rem;
+    z-index: 10;
+}
+.list-menu-mobile {
+    display: inline-block;
+    position: absolute;
+    top: 14%;
+    right: 39%;
+    
+    
+}
+
+@keyframes opa {
+    from {opacity: 0; width:0%}
+    to {opacity: 1; width:100%}
+    
+  }
 
 
 
 
+/* mobie */
+@media (max-width: 739px){
+    #header{
+        display: none;
+    }
+    #mySidepanel {
+        height: 5rem;
+        position: fixed;
+        margin: auto;
+        transition: top 0.2s;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        width: 100%;
+        display: block;
+        
+        
 
-
+        
+    }
+    .openbtn{
+        font-size: 3rem;
+        background-color: transparent;
+        color: white;
+        border: none;
+        
+        margin-left: 2rem;
+        line-height: 5rem;
+    }
+    .box-item-top {
+        padding-top: 7.5rem;
+        margin-top: -5rem;
+    }
+}
 
 /* tablet */
 @media (min-width: 740px){
-
+    
 }
 /* pc medium */
 @media (min-width: 1113px){
@@ -288,9 +385,11 @@
         box-shadow: 0.8rem 0.8rem 0.5rem #aaaaaa;
     }
 }
+/* pc */
 @media (min-width: 1024px) and (max-width: 1239px) {
     .box-item:hover{
         transform: translate(0.3rem,-0.5rem);
         box-shadow: 0.8rem 0.8rem 0.5rem #aaaaaa;
     }
 }
+

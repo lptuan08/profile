@@ -19,7 +19,7 @@
                     <div class="l-12 m-12 c-12 menu-header">
                         <ul class="list-menu">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">food</a></li>
+                            <li><a href="#">Food</a></li>
                             <li><a href="#">Film</a></li>
                             <li><a href="#">Music</a></li>
                             <li><a href="#">Travel</a></li>
@@ -28,6 +28,33 @@
                 </div>
             </div>
         </div>
+
+        <div id="mySidepanel">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="l-12 m-12 c-12 menu-header">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="panel">
+            <div class="closex" onclick="closeNav()">
+                <i class="ti-close"></i>
+            </div>
+            <div class="box-menu-list">
+                <ul class="list-menu-mobile">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Film</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Travel</a></li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
         <!-- ============content================= -->
         <div class="container-content">
             <div class="grid wide">
@@ -180,8 +207,6 @@
                                         </div>
                                         
                                     </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -190,4 +215,5 @@
         <!-- ===========end content============= -->
     </div>
 </body>
+<script src="./javascript.js"></script>
 </html>
