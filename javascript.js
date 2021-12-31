@@ -27,7 +27,7 @@ const menuItems = document.querySelectorAll(".box-menu-list li");
 for(let i = 0; i< menuItems.length; i++){
     let menuItem = menuItems[i];
     menuItem.onclick = function(){
-        panel.style.display="none"
+        setTimeout(function(){panel.style.display="none"},500);
     }
 }
 
