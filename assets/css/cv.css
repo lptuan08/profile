@@ -290,9 +290,9 @@
     width: 100vw;
     z-index: 5;
     position: fixed;
-    /* animation: openNav 0.2s ease-in ; */
+    animation: openNav 0.2s ease-in ;
    
-    transition: top ease .3s, transform ease .3s .3s;
+    
 
     display: none;
 
@@ -341,11 +341,7 @@
     
   }
 
-@keyframes closeNav {
-    from {opacity: 1; width:100%}
-    to {opacity: 0; width:0%}
-    
-  }
+
 
 
 /* mobie */
